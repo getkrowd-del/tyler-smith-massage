@@ -114,3 +114,64 @@ body{font-family:var(--body);color:var(--text);background:var(--warm-white);line
 .footer-copy{font-size:.8rem;margin-top:8px}
 @media(max-width:768px){.story-inner{grid-template-columns:1fr;gap:32px}.story-sidebar{position:static}.philosophy-inner{grid-template-columns:1fr}.nav-links{gap:20px}.footer-inner{flex-direction:column;gap:20px}}
 @media(max-width:480px){.nav-links{display:none}}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--accent:#5B7B5D;--accent-light:#7A9E7C;--dark:#1A1D1F;--cream:#F7F5F0;--warm-white:#FDFCFA;--text:#2C2C2C;--text-light:#6B6B6B;--display:'Fraunces',Georgia,serif;--body:'Source Sans 3','Source Sans Pro',sans-serif;--max-w:1140px;--section-pad:clamp(60px,8vw,100px)}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--warm-white);line-height:1.6;-webkit-font-smoothing:antialiased}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,252,250,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--display);font-weight:700;font-size:1.15rem;color:var(--dark);text-decoration:none;letter-spacing:-.02em}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--text-light);text-decoration:none;letter-spacing:.02em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+.pkg-hero{padding:clamp(120px,14vw,160px) 24px 60px;background:var(--cream)}
+.pkg-hero-inner{max-width:var(--max-w);margin:0 auto;text-align:left}
+.pkg-hero-label{font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:12px}
+.pkg-hero h1{font-family:var(--display);font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;color:var(--dark);letter-spacing:-.03em;margin-bottom:16px}
+.pkg-hero p{font-size:1.1rem;color:var(--text-light);max-width:560px;line-height:1.7}
+.email-section{padding:40px 24px;background:var(--warm-white);border-bottom:1px solid rgba(0,0,0,.06)}
+.email-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.email-inner label{font-weight:600;font-size:.95rem;color:var(--dark);white-space:nowrap}
+.email-inner input{flex:1;min-width:260px;padding:12px 16px;border:2px solid rgba(0,0,0,.1);background:#fff;font-family:var(--body);font-size:.95rem;color:var(--text);outline:none;transition:border-color .2s}
+.email-inner input:focus{border-color:var(--accent)}
+.email-note{font-size:.82rem;color:var(--text-light);margin-left:auto}
+.packages{padding:var(--section-pad) 24px;background:var(--warm-white)}
+.packages-inner{max-width:var(--max-w);margin:0 auto}
+.pkg-grid{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:24px;align-items:start}
+.pkg-card{background:#fff;border:2px solid rgba(0,0,0,.06);padding:40px 32px 36px;position:relative;transition:border-color .2s}
+.pkg-card:hover{border-color:var(--accent)}
+.pkg-card.featured{border-color:var(--accent);background:var(--dark);color:#fff}
+.pkg-card.featured .pkg-price{color:#fff}
+.pkg-card.featured .pkg-per{color:rgba(255,255,255,.5)}
+.pkg-card.featured .pkg-desc{color:rgba(255,255,255,.7)}
+.pkg-card.featured .pkg-features li{color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.1)}
+.pkg-card.featured .pkg-features li::before{color:var(--accent-light)}
+.pkg-badge{position:absolute;top:-1px;right:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;padding:6px 14px}
+.pkg-name{font-family:var(--display);font-size:1.3rem;font-weight:700;color:var(--dark);margin-bottom:6px}
+.pkg-card.featured .pkg-name{color:#fff}
+.pkg-price{font-family:var(--display);font-size:2.6rem;font-weight:700;color:var(--dark);line-height:1;margin-bottom:4px}
+.pkg-per{font-size:.85rem;color:var(--text-light);margin-bottom:20px}
+.pkg-desc{font-size:.95rem;color:var(--text-light);line-height:1.6;margin-bottom:24px;min-height:48px}
+.pkg-features{list-style:none;margin-bottom:28px}
+.pkg-features li{font-size:.9rem;color:var(--text);padding:10px 0;border-bottom:1px solid rgba(0,0,0,.06);padding-left:20px;position:relative}
+.pkg-features li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:700}
+.btn{display:inline-block;padding:14px 32px;background:var(--accent);color:#fff;font-family:var(--body);font-size:.95rem;font-weight:600;text-decoration:none;border:none;cursor:pointer;letter-spacing:.02em;transition:background .2s,transform .15s;width:100%;text-align:center}
+.btn:hover{background:var(--accent-light);transform:translateY(-1px)}
+.btn-white{background:#fff;color:var(--accent)}
+.btn-white:hover{background:var(--cream)}
+.pkg-details{padding:var(--section-pad) 24px;background:var(--cream)}
+.pkg-details-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.detail-block h3{font-family:var(--display);font-size:1.2rem;font-weight:600;color:var(--dark);margin-bottom:12px}
+.detail-block p{font-size:.95rem;color:var(--text-light);line-height:1.7}
+.footer{padding:48px 24px 32px;background:var(--dark);color:rgba(255,255,255,.6)}
+.footer-inner{max-width:var(--max-w);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+.footer-brand{font-family:var(--display);font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:8px}
+.footer-links{display:flex;gap:24px;list-style:none}
+.footer-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.9rem;transition:color .2s}
+.footer-links a:hover{color:var(--accent-light)}
+.footer-copy{font-size:.8rem;margin-top:8px}
+@media(max-width:900px){.pkg-grid{grid-template-columns:1fr}.pkg-card.featured{order:-1}}
+@media(max-width:768px){.pkg-details-inner{grid-template-columns:1fr;gap:32px}.nav-links{gap:20px}.footer-inner{flex-direction:column;gap:20px}.email-inner{flex-direction:column;align-items:stretch}.email-note{margin-left:0}}
+@media(max-width:480px){.nav-links{display:none}}
