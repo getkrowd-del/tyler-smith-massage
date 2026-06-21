@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://getkrowd-del.github.io/tyler-smith-massage/packages/</loc>
+    <lastmod>2026-06-21T10:42:32.022Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://getkrowd-del.github.io/tyler-smith-massage/about/</loc>
     <lastmod>2026-06-21T10:42:27.047Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -8,11 +13,6 @@
   <url>
     <loc>https://getkrowd-del.github.io/tyler-smith-massage/</loc>
     <lastmod>2026-06-21T10:42:22.025Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://getkrowd-del.github.io/tyler-smith-massage/packages/</loc>
-    <lastmod>2026-06-21T10:42:00.234Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
